@@ -1,1 +1,5 @@
 Various jQuery plugins I've created over the years
+
+Support - contains plugins that might go under jQuery.support but for now are just plugins
+
+border radius support - Determines which style properties the element, and therefore the browser, supports. Returns an object containing three boolean properties: moz, webkit, and css3. 
