@@ -10,11 +10,18 @@
     <div id="results"></div>
 <script type="text/javascript">
     $(function() {
-       var support = $("#results").borderRadiusSupport();
+                    var support = $("#results").borderRadiusSupport();
+                    var supportNoDiv = $().borderRadiusSupport();
+                    ;
        $("#results").append("<div>MozBorderRadius support=" + support.moz + "</div>");
         $("#results").append("<div>webkitBorderRadius support=" + support.webkit + "</div>");
         $("#results").append("<div>BorderRadius support=" + support.css3 + "</div>");
-
+        $("#results").append("<div>Any support=" + support.any + "</div>");
+        
+        $("#results").append("<div>MozBorderRadius support with empty jQuery object=" + supportNoDiv.moz + "</div>");
+        $("#results").append("<div>webkitBorderRadius support with empty jQuery object=" + supportNoDiv.webkit + "</div>");
+        $("#results").append("<div>BorderRadius support with empty jQuery object=" + supportNoDiv.css3 + "</div>");
+        $("#results").append("<div>Any support with empty jQuery object=" + supportNoDiv.any + "</div>");
 
 
 
